@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Sketch</title>
+  </head>
+  <body>
+    <h1>Live Sketch</h1>
+    <div>
+      <img src="{% url 'generate2' %}" alt="Live Sketch" />
+    </div>
+    <form action="{% url 'download_photo' %}" method="get">
+      <button type="submit">Download Photo</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Data Collection</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fff7ed; /* Light orange background */
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #ff7f0e; /* Orange heading */
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      a {
+        display: block;
+        text-align: center;
+        background-color: #ff7f0e; /* Orange button */
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+      a:hover {
+        background-color: #cc6f07; /* Slightly darker shade on hover */
+      }
+      p {
+        text-align: center;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>{{ label }} Data Collection</h1>
+      <img src="{% url 'data_collection' %}" alt="Data Collection Image" />
+      <a href="{% url 'model_training' %}">Start Training</a>
+      <p>Data Collection Status: {{ data_collection_status }}</p>
+    </div>
+  </body>
+</html>

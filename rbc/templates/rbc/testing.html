@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Training</title>
+  </head>
+  <body>
+    <h1>Model Testing</h1>
+
+    <div>
+      <p>
+        Sorry if youw wanted to watch it...But Heyy...The Model is trained !!
+      </p>
+      <b><p>The model will be deleted after 10 mins..</p></b>
+    </div>
+
+    <div>
+      <a href="{% url 'test' %}">
+        <button>Start Video Stream</button>
+      </a>
+      <a href="{% url 'download_model' %}" download>Download Model</a>
+    </div>
+  </body>
+</html>

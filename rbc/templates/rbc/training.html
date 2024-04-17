@@ -1,0 +1,39 @@
+<!-- training.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Model Training</title>
+  </head>
+  <body>
+    <h1>Model Training</h1>
+
+    <!-- Embed YouTube video -->
+
+    <object style="height: 390px; width: 640px">
+      <param
+        name="movie"
+        value="https://www.youtube.com/v/fcO5POWgZnU?version=3"
+      />
+      <param name="allowFullScreen" value="true" />
+      <param name="allowScriptAccess" value="always" />
+      <embed
+        src="https://www.youtube.com/v/fcO5POWgZnU?version=3"
+        type="application/x-shockwave-flash"
+        allowfullscreen="true"
+        allowScriptAccess="always"
+        width="640"
+        height="390"
+      />
+    </object>
+    <a href="{% url 'training' %}">Start Training</a>
+    <div>
+      <p>
+        Training is in progress. This may take some time...till thenenhoy thee
+        video
+      </p>
+    </div>
+  </body>
+</html>
