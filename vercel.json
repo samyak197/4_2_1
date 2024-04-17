@@ -4,7 +4,7 @@
             "src": "my_site/wsgi.py",
             "use": "@vercel/python",
             "config": {
-                "runtime": "python3.10.1",
+                "runtime": "python",
                 "maxLambdaSize": "15mb"
             }
         }
