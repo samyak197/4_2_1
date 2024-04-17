@@ -4,14 +4,14 @@
             "src": "my_site/wsgi.py",
             "use": "@vercel/python",
             "config": {
-                "runtime": "python3.9",
+                "runtime": "python3.8",
                 "maxLambdaSize": "15mb"
             }
         }
     ],
     "routes": [
         {
-            "src": "/",
+            "src": "/(.*)",
             "dest": "my_site/wsgi.py"
         }
     ]
