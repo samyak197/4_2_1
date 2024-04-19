@@ -3,7 +3,6 @@
     "builds": [
         {
             "src": "my_site/wsgi.py",
-            "use": "vercel-python@3.9",
             "config": {
                 "maxLambdaSize": "15mb"
             }
